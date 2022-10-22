@@ -16,5 +16,13 @@ class ArticleController extends Controller
         $this->articleRepository = $articleRepository;
 
     }
+    public  function  insert_json_file():bool
+    {
+        $json = file_get_contents(storage_path('app\public\articles.json'));
+        $articles_array = json_decode($json,true);
+        foreach ($articles_array['articles'] as $article)
+            $this->articleRepository->create($article);
 
+       return true;
+    }
 }
