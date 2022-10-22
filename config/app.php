@@ -175,6 +175,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+
+        //modules
+
+        Modules\Product\Providers\ProductServiceProvider::class,
+        Modules\Article\Providers\ArticleServiceProvider::class,
     ],
 
     /*
