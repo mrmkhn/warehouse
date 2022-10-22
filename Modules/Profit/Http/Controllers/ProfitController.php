@@ -23,5 +23,6 @@ class ProfitController extends Controller
     public function  index()
     {
         app('Modules\Article\Http\Controllers\ArticleController')->insert_json_file();
+        app('Modules\Product\Http\Controllers\ProductController')->insert_json_file();
     }
 }
