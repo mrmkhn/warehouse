@@ -45,7 +45,9 @@
         "psr-4": {
             "Tests\\": "tests/",
             "Modules\\Product\\": "Modules/Product",
-            "Modules\\Article\\": "Modules/Article"
+            "Modules\\Article\\": "Modules/Article",
+            "Modules\\Profit\\": "Modules/Profit"
+
         }
     },
     "minimum-stability": "dev",

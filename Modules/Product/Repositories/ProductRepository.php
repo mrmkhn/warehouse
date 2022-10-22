@@ -21,4 +21,16 @@ class ProductRepository
     {
         return $product->articles()->attach($article['id'],['amount'=>$article['amount']]);
     }
+
+    public function all()
+    {
+        return Product::all();
+    }
+
+    public function get_articles($product)
+    {
+        return $product->articles->sortby('stock');
+    }
+
+
 }

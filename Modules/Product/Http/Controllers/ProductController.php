@@ -38,5 +38,9 @@ class ProductController extends Controller
             $this->productRepository->attach_article($product,$article);
         return true;
     }
+    public  function  get_all()
+    {
+       return $this->productRepository->all();
+    }
 
 }

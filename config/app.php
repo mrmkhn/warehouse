@@ -180,6 +180,8 @@ return [
 
         Modules\Product\Providers\ProductServiceProvider::class,
         Modules\Article\Providers\ArticleServiceProvider::class,
+        Modules\Profit\Providers\ProfitServiceProvider::class,
+
     ],
 
     /*
